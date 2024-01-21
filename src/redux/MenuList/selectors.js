@@ -1,0 +1,1 @@
+export const selectRandomUser = (state) => state.randomUser;
