@@ -1,21 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import NotFound from "./pages/notFound/NotFound";
 import MenuList from "./pages/menu/MenuList";
 import AboutUs from "./pages/about/AboutUs";
 
-import { UseDispatch, useDispatch } from "react-redux";
-import { getRandomUser } from "./redux/MenuList/operations";
-
 
 function App() {
-  const dispatch = useDispatch();
-
-  const fetchData = async () => {
-    await dispatch(getRandomUser());
-  };
-  fetchData();
+  
   return (
     <>
       <Routes>

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getRandomUser = () => async (dispatch) => {
   try {
-    const response = await axios.get("https://pokeapi.co/api/v2/pokemon/ditto");
+    const response = await axios.get("https://pokeapi.co/api/v2/pokemon/");
     dispatch(setRandomUser(response.data));
     console.log(response.data);
   } catch (error) {
