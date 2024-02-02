@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const randomUserSlice = createSlice({
-  name: 'randomUser',
+const dishesListSlice = createSlice({
+  name: 'dishesList',
   initialState: null,
   reducers: {
-    setRandomUser: (state, action) => action.payload,
+    setDishesList: (state, action) => action.payload.results,
   },
 });
 
-export const { setRandomUser } = randomUserSlice.actions;
-export default randomUserSlice.reducer;
+export const { setDishesList } = dishesListSlice.actions;
+export default dishesListSlice.reducer;

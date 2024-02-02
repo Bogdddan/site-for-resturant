@@ -1,1 +1,1 @@
-export const selectRandomUser = (state) => state.randomUser;
+export const selectDishes = (state) => state.dishes;

@@ -1,16 +1,16 @@
 import axios from "axios";
 
-export const getRandomUser = () => async (dispatch) => {
+export const getDishes = () => async (dispatch) => {
   try {
     const response = await axios.get("https://pokeapi.co/api/v2/pokemon/");
-    dispatch(setRandomUser(response.data));
-    console.log(response.data);
+    dispatch(setDishes(response.data.results));
+    console.log(response.data.results);
   } catch (error) {
     console.error("Error fetching random user:", error);
   }
 };
 
-const setRandomUser = (user) => ({
-  type: 'SET_RANDOM_USER',
-  payload: user,
+const setDishes = (dishes) => ({
+  type: 'SET_DISHES',
+  payload: dishes,
 });
