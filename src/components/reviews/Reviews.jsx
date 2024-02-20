@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import './reviews.css'
+import './Reviews.css';
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import photo1 from '../../photo/photo1.jpg';
 import photo2 from '../../photo/photo2.jpg';
@@ -8,26 +8,26 @@ import photo4 from '../../photo/photo4.jpg';
 
 const testimonials = [
   {
-    name: 'dskjbdsjkb krainyk',
-    title: 'крутий чувак',
+    name: 'Emily Roberts',
+    title: 'Lead, Instagram',
     image: photo1,
     quote: "In the heart of every great community lies a welcoming restaurant, where stories are shared, friendships are forged, and memories are made."
   },
   {
-    name: 'bpgdan krainyk',
-    title: 'csjkbshjcbd чувак',
+    name: 'Sarah Thompson',
+    title: 'Software Enginer, Telegram',
     image: photo2,
     quote: "A restaurant isn't just about the food on the plate; it's about the joy it brings to those gathered around the table, savoring flavors and creating moments of pure delight."
   },
   {
-    name: 'dsjkbdsjkd krainyk',
-    title: 'sdcdsdscs чувак',
+    name: ' Michael Anderson',
+    title: 'Tech Lead, Google',
     image: photo3,
     quote: "Behind every successful restaurant is a team dedicated not only to serving delicious cuisine but also to crafting unforgettable experiences for every guest who walks through the door."
   },
   {
-    name: 'dksjhdjkdsb krainyk',
-    title: 'pwekwpoek чувак',
+    name: 'David Johnson',
+    title: 'Brand Coordinator, Facebook',
     image: photo4,
     quote: "Within the walls of a restaurant, strangers become friends, and meals become celebrations of life's simple pleasures, reminding us to savor each moment and cherish the company we keep."
   }
