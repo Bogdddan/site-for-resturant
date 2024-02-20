@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import './reviews.css'
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import photo1 from '../../photo/photo1.jpg';
 import photo2 from '../../photo/photo2.jpg';
@@ -39,23 +40,54 @@ function Reviews() {
       <div className="testimonial-container">
         <div className="arrows left">
           <span>
-            <IoIosArrowRoundBack/>
+            <IoIosArrowRoundBack />
           </span>
         </div>
 
-          <div className="inner">
-            <div className="t-image">
-              <ul>
-                <li>
-                  <img src={testimonials[0].image} alt="photo" />
-                </li>
-              </ul>
-            </div>
+        <div className="inner">
+          <div className="t-image">
+            <ul>
+              <li>
+                <img src={testimonials[0].image} alt={testimonials[0].name} />
+              </li>
+              <li>
+                <img src={testimonials[1].image} alt={testimonials[1].name} />
+              </li>
+              <li>
+                <img src={testimonials[2].image} alt={testimonials[2].name} />
+              </li>
+            </ul>
           </div>
+          <div className="t-content">
+            <ul>
+              <li>
+                <div className="content-inner">
+                  <p className="quote">{testimonials[0].quote}</p>
+                  <h3 className="name">{testimonials[0].name}</h3>
+                  <h4 className="title">{testimonials[0].title}</h4>
+                </div>
+              </li>
+              <li>
+                <div className="content-inner">
+                  <p className="quote">{testimonials[1].quote}</p>
+                  <h3 className="name">{testimonials[1].name}</h3>
+                  <h4 className="title">{testimonials[1].title}</h4>
+                </div>
+              </li>
+              <li>
+                <div className="content-inner">
+                  <p className="quote">{testimonials[2].quote}</p>
+                  <h3 className="name">{testimonials[2].name}</h3>
+                  <h4 className="title">{testimonials[2].title}</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div className="arrows right">
           <span>
-            <IoIosArrowRoundForward/>
+            <IoIosArrowRoundForward />
           </span>
         </div>
       </div>
